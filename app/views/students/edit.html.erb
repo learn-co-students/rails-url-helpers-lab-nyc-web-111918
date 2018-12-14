@@ -1,0 +1,13 @@
+<%= form_for @student do |f| %>
+<%= f.label :first_name %>
+<%= f.text_field :first_name %><br>
+
+<%= f.label :last_name %>
+<%= f.text_field :last_name %><br>
+
+<%= f.check_box :active %>
+<%= f.label :active %><br>
+
+<%=  f.submit "Submit" %>
+
+<% end %>
