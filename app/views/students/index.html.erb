@@ -1,5 +1,7 @@
 <div>
+  <p>Hello!</p>
+
   <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
-  <% end %>
-</div>
+
+    <a >  <%= link_to "#{student}", "/students/#{student.id}" %> </a>
+  <%end%>
